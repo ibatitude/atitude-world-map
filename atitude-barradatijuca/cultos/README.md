@@ -15,25 +15,13 @@ Os horários marcados com  serão cultos com tradução em libras
 Domingo
 
 Culto de Celebração
-Domingo / 9h, 11h  e 19h
+Domingo / 8h30, 11h  e 19h
 É um encontro feito para família celebrar a Deus com toda reverência e alegria.
 
 Acontece no templo principal
 
-Segunda
-Preciosa Online
-Segunda / 19h
-O culto Preciosa acontece toda segunda-feira, às 19h pelo AtitudeTV no Youtube e uma vez por mês aos sábados de manhã, às 10h, não perca! Deus tem uma palavra edificante para você mulher.
-
-Acontece no templo principal
 
 Quarta
-Culto da Conquista
-Quarta / 19h
-Com muito louvor, adoração e sempre uma palavra direcionada para homens.
-
-Acontece no templo kids
-
 Culto da Resposta
 Quarta / 20h
 Venha no culto de quarta feira e receba a resposta poderosa de Deus.
@@ -46,15 +34,15 @@ Base
 Sexta / 20h
 Culto de Adolescentes.
 
-Acontece no templo kids
+Acontece no templo principal
 
 Sábado
 
 Be One
-Sexta / 20h
+Sábado / 20h
 O Culto Be One é o culto de jovens da igreja Atitude, você que é jovem não pode ficar de fora!
 
-Acontece no templo kids
+Acontece no templo principal
 
 Contato
 Estamos sempre à disposição para atendê-los! Em dias úteis e horário comercial. Fale conosco!
