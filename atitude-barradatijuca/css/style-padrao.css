@@ -305,6 +305,7 @@ input:checked + expansion-panel .expansion-panel-header:after {
 }
 input:checked + expansion-panel .expansion-panel-content {
   max-height: 500px;
+  overflow: auto;
   padding-bottom: 12px;
   padding-top: 12px;
 }
