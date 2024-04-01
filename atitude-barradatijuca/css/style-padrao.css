@@ -281,3 +281,134 @@ column-count: 2;
 column-count: 1;
 }
 }
+
+
+/* ACCORDION COMPONENT */
+
+expansion-panel {
+  display: block;
+  background-color: #FFF;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  transition: margin 225ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #606060;
+}
+input:not(:checked) + expansion-panel:hover {
+  background-color: #F5F5F5;
+}
+input:checked + expansion-panel .expansion-panel-header {
+  height: 64px;
+  border-bottom: 1px solid #c9c9c9;
+}
+input:checked + expansion-panel .expansion-panel-header:after {
+  transform: rotate(270deg);
+}
+input:checked + expansion-panel .expansion-panel-content {
+  max-height: 500px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+expansion-panel .expansion-panel-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 0;
+  height: 48px;
+  transition: height 225ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+}
+expansion-panel .expansion-panel-header > * {
+  flex: 1;
+}
+expansion-panel .expansion-panel-header:after {
+  content: ">";
+  font-family: monospace, Courier, 'Courier New';
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(90deg);
+  right: 10px;
+  background: #313131;
+  display: inline;
+  color: #fff;
+  width: 30px;
+  border-radius: 999px;
+  align-content: center;
+  text-align: center;
+  padding: 0;
+  aspect-ratio: 1 / 1;
+}
+expansion-panel .expansion-panel-content {
+  overflow: hidden;
+  max-height: 0px;
+  padding: 0 24px;
+  transition: all 225ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+accordion input:checked + expansion-panel:not(:first-of-type) {
+  margin-top: 10px;
+}
+accordion input:checked + expansion-panel:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+
+/* TIME-LINE COMPONENT */
+.time-line-content {
+  display: block;
+}
+.time-line-dot {
+  display: flex;
+  border-bottom: solid 1px #f1f1f1;
+  padding-bottom: 5px;
+}
+.time-line-dot-title {
+  width: 100%;
+  text-align: left;
+  margin-top: 16px;
+  font-weight: bold;
+}
+.time-line-dot-details {
+  width: 100%;
+  margin-left: 0px;
+  font-weight: 400;
+}
+.time-line-content > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-line-content li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 2em;
+  padding-left: 25px;
+}
+
+.time-line-content li:before {
+  content: '';
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: -13px;
+  width: 2px;
+}
+.time-line-content li:after {
+  content: '●';
+/*   background-color: red; */
+  position: absolute;
+  bottom: 0;
+  top: 15px;
+  left: -17px;
+  width: 2px;
+}
+
+/* MASK */
+.mask {
+  background-color: rgba(0, 0, 0, .3);
+}
