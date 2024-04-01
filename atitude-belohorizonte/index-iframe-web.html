@@ -39,7 +39,7 @@
   iframe#ifrm {
     width: 100%;
     border: 0px solid red;
-    aspect-ratio: 16/9;
+    height: 6880px;
   }
 
   iframe#ifrm html {
@@ -61,37 +61,25 @@
     padding: 0px;
     margin: 0;
   }
-</style>
-<iframe id="ifrm" src="https://ibatitude.github.io/atitude-world-map/atitude-belohorizonte/"></iframe>
-<script type="text/javascript">
-  // modified from same-domain version at www.dyn-web.com/tutorials/iframes/height/
-  function setIframeHeightCO(id, ht) {
-    var ifrm = document.getElementById(id);
-    //ifrm.style.visibility = 'hidden';
-    // some IE versions need a bit added or scrollbar appears
-    ifrm.style.height = ht + 4 + "px";
-    ifrm.style.visibility = 'visible';
-  }
 
-  // iframed document sends its height using postMessage
-  function handleDocHeightMsg(e) {
-    // check origin
-    if (e.origin === 'https://ibatitude.github.io') {
-      // parse data
-      var data = JSON.parse(e.data);
-      // check data object
-      if (data['docHeight']) {
-        setIframeHeightCO('ifrm', data['docHeight']);
-      } else if (data['href']) {
-        setIframe('ifrm', data['href']);
-      }
+  @media only screen and (min-width:600px) {
+    iframe#ifrm {
+      height: 6240px;
     }
   }
 
-  // assign message handler
-  if (window.addEventListener) {
-    window.addEventListener('message', handleDocHeightMsg, false);
-  } else if (window.attachEvent) { // ie8
-    window.attachEvent('onmessage', handleDocHeightMsg);
+  @media only screen and (min-width:1024px) {
+    iframe#ifrm {
+      height: 5100px;
+    }
   }
-</script>
+
+  @media only screen and (min-width:1440px) {
+    iframe#ifrm {
+      height: 4880px;
+    }
+  }
+
+  @media only screen and (min-width:1920px) {}
+</style>
+<iframe id="ifrm" src="https://ibatitude.github.io/atitude-world-map/atitude-belohorizonte/"></iframe>
